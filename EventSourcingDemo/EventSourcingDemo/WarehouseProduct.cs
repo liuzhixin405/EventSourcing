@@ -17,7 +17,7 @@ namespace EventSourcingDemo
         private readonly CurrentState _currentState = new();
         public WarehouseProduct(string sku)
         {
-            this.Sku = sku;
+            this.sku = sku;
         }
 
         public void ShipProduct(int quantity)
@@ -75,7 +75,7 @@ namespace EventSourcingDemo
             _currentState.QuantityOnHand += @event.Quantity;
         }
         public IList<IEvent> GetEvents() => _events;
-        public string Sku { get; }
+        public string Sku => sku;
         public int GetQuantityOnHand()
         {
             return _currentState.QuantityOnHand;
