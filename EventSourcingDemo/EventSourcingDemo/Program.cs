@@ -27,6 +27,7 @@ internal partial class Program
                         warehouseProduct.ReceiveProduct(receiveInput.Quantity);
                         Console.WriteLine($"{sku} Received:{receiveInput.Quantity}");
                     }
+                    GetException();
                     break;
                 case "S":
                     var shipInput = GetQuantity();
@@ -35,6 +36,7 @@ internal partial class Program
                         warehouseProduct.ShipProduct(shipInput.Quantity);
                         Console.WriteLine($"{sku} Shipped:{shipInput.Quantity}");
                     }
+                    GetException();
                     break;
                 case "A":
                     var adjustmentInput = GetQuantity();
@@ -44,6 +46,7 @@ internal partial class Program
                         warehouseProduct.AdjustInventory(adjustmentInput.Quantity, reason);
                         Console.WriteLine($"{sku} Adjusted:{adjustmentInput.Quantity} {reason}");
                     }
+                    GetException();
                     break;
                 case "Q":
                     var currentQuantityOnHand = warehouseProduct.GetQuantityOnHand();
@@ -93,13 +96,18 @@ internal partial class Program
         {
             return new Model(true, number);
         }
-        throw new InvalidOperationException("数量必须是整型数字");
+        return new Model(false,0);
     }
 
     static string GetSkuFromConsole()
     {
         Console.WriteLine("请输入 sku 名: ");
         return Console.ReadLine();
+    }
+
+    static Exception GetException()
+    {
+        throw new Exception("输入非法数字");
     }
 }
 
