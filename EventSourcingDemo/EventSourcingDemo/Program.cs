@@ -84,7 +84,7 @@ internal partial class Program
     static string GetAdjustmentReason()
     {
         Console.WriteLine("请输入调整理由: ");
-        return Console.ReadLine();
+        return Console.ReadLine() ?? throw new Exception("输入sku有误");
     }
 
     record Model(bool IsValid, int Quantity);
@@ -102,7 +102,7 @@ internal partial class Program
     static string GetSkuFromConsole()
     {
         Console.WriteLine("请输入 sku 名: ");
-        return Console.ReadLine();
+        return Console.ReadLine()??throw new Exception("输入sku有误");
     }
 
     static Exception GetException()
