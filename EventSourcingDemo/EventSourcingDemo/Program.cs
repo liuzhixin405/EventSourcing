@@ -83,7 +83,7 @@ internal partial class Program
 
     static string GetAdjustmentReason()
     {
-        Console.WriteLine("请输入拒收理由: ");
+        Console.WriteLine("请输入调整理由: ");
         return Console.ReadLine();
     }
 
