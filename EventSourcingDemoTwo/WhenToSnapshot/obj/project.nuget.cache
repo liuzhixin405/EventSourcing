@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "thtL+apm7ZkM5CKpMVV0jr+jA3EfQMhUl1AtW5Ns2lX/qvOQwVVOucO2XcKNAEbaa3g1tsiuYy/LEJ1XENPc2w==",
+  "dgSpecHash": "FzQflgBStR6/CxRz+NrYczgEwAtf/EDDaoKzItrYKV9WaPD0zoQELiavi8+nh8qpSimzVtO6EpI+QfWkJVKxwQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\exercise\\EventSourcing\\EventSourcingDemoTwo\\WhenToSnapshot\\WhenToSnapshot.csproj",
+  "projectFilePath": "D:\\GitHub\\EventSourcing\\EventSourcingDemoTwo\\WhenToSnapshot\\WhenToSnapshot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.6\\microsoft.netcore.app.host.win-x64.6.0.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.6\\microsoft.aspnetcore.app.ref.6.0.6.nupkg.sha512",

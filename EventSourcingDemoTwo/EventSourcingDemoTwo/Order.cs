@@ -9,9 +9,10 @@ namespace EventSourcingDemoTwo
     internal class Order
     {
         public string UserId { get; set; }
-        public List<Product> Products { get => new List<Product>(); set => this.Products = value; }
+        public List<Product> Products = new List<Product>();
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
+        public List<Product> Proudct => Products;
 
     }
 

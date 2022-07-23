@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\exercise\\EventSourcing\\EventSourcingDemoTwo\\EventSourcingDemoTwo\\EventSourcingDemoTwo.csproj",
+      "projectUniqueName": "D:\\GitHub\\EventSourcing\\EventSourcingDemoTwo\\EventSourcingDemoTwo\\EventSourcingDemoTwo.csproj",
       "projectName": "EventSourcingDemoTwo",
-      "projectPath": "D:\\GitHub\\exercise\\EventSourcing\\EventSourcingDemoTwo\\EventSourcingDemoTwo\\EventSourcingDemoTwo.csproj",
+      "projectPath": "D:\\GitHub\\EventSourcing\\EventSourcingDemoTwo\\EventSourcingDemoTwo\\EventSourcingDemoTwo.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\exercise\\EventSourcing\\EventSourcingDemoTwo\\EventSourcingDemoTwo\\obj\\",
+      "outputPath": "D:\\GitHub\\EventSourcing\\EventSourcingDemoTwo\\EventSourcingDemoTwo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

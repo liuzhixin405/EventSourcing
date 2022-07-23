@@ -7,7 +7,7 @@ namespace WhenToSnapshot
     {
         void Main()
         {
-            Select(a => new { a.Id, a.Name }).Dump();
+            Select(a => new { a.Id, a.Name });
         }
         public class Entity
         {
@@ -35,7 +35,7 @@ namespace WhenToSnapshot
             {
                 _sb.Append("select ");
                 //Visit(node.Body);
-                var result = base.VisitLambda( node.Dump());
+                var result = base.VisitLambda( node);
                 _sb.Append(" from ");
                 _sb.Append(node.Parameters.First().Type.Name);
                 _sb.Append(";");

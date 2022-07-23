@@ -1,4 +1,5 @@
 ﻿using EventSourcingDemoTwo;
+using System.Text.Json;
 
 var events = new List<Event>
 {
@@ -6,7 +7,7 @@ var events = new List<Event>
     new AddedItemToCart(1,2),
     new AddedItemToCart(4,1),
     new AddedItemToCart(3,2),
-    new AddedShippingInformationCart("深圳市宝安区","130333333333")
+    new AddedShippingInformationCart("深圳市宝安区","130333333333"),
 };
 
 var orderAffregate = (Order order, Event e) =>
@@ -45,4 +46,7 @@ new RemovedItemFromCart(1,1)
 };
 var order2 = events2.Aggregate(order1, orderAffregate);
 
-Console.WriteLine($"order=> {System.Text.Json.JsonSerializer.Serialize(order2)}");
+Console.WriteLine($"order=> {System.Text.Json.JsonSerializer.Serialize(order2,new JsonSerializerOptions { 
+WriteIndented = true,
+Encoder= System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+})}");
